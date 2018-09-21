@@ -4,7 +4,6 @@ body {
     background-color: #77b966;
 }
 .pagetitle {
-    padding: 30 0em;
     margin: 5px;
     text-align: center;
     font-size: 2em;
@@ -46,7 +45,6 @@ input {
 /*** Specifiek voor invoervelden postcode, geboortedatum, kenteken en ingangsdatum ***/
 .invoer {
     display: inline-block;
-    float: center;
     border: 1px solid #28611a;
     border-radius: 5px;
     background-color: white;
@@ -55,7 +53,6 @@ input {
 /*** Specifiek voor datum-invoer ***/
 #dat {
     display: inline-block;
-    float: center;
     width: 45%;
     color: #77b966;
 }
@@ -65,14 +62,14 @@ input {
     margin-left: 5em;
 }
 /*** Specifiek voor verzendknop ***/
-#knop {
+.knop {
     display: inline-block;
     margin-left: 1em;
     width: 93%;
     background-color: #77b966;
     color: white;
     font-size: large;
-    background: linear-gradient(to bottom, #77b966, #28611a);
+    background: linear-gradient(to bottom, #e0f0dc, #77b966);
     border-radius: 0.5em;
 }
 /*** Specifiek voor checkbox kenteken ***/
@@ -96,7 +93,6 @@ input[type=checkbox] {
 /*** Specifiek voor radiobuttons verzekering ***/
 .rad {
     display: inline-block;
-    float: center;
     margin: 0 0.5em 0 0.5em;
 }
 #lab {
