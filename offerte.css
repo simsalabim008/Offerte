@@ -72,6 +72,8 @@ input {
     background-color: #77b966;
     color: white;
     font-size: large;
+    background: linear-gradient(to bottom, #77b966, #28611a);
+    border-radius: 0.5em;
 }
 /*** Specifiek voor checkbox kenteken ***/
 #chk {
