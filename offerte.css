@@ -1,0 +1,102 @@
+/*** Generiek ***/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #77b966;
+}
+.pagetitle {
+    padding: 30 0em;
+    margin: 5px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+legend {
+    color: #28611a;
+    padding: 0.85em;
+    font-size: large;
+}
+form {
+    width: 30em;
+    margin: auto;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 3px 3px 5px #888;
+    position: static;
+}
+fieldset {
+    border: 1px solid #77b966;
+    padding: 0 0 1em 0;
+    position: relative;
+}
+label {
+    display: inline-block;
+    float: left;
+    padding: 1em;
+    position: relative;
+    width: 28em;
+}
+input {
+    margin-left: 2em;
+}
+::placeholder {
+    color: #77b966;
+    opacity: 1;
+}
+
+/*** Specifiek voor invoervelden postcode, geboortedatum, kenteken en ingangsdatum ***/
+.invoer {
+    display: inline-block;
+    float: center;
+    border: 1px solid #28611a;
+    border-radius: 5px;
+    background-color: white;
+    color: #28611a;    
+}
+/*** Specifiek voor datum-invoer ***/
+#dat {
+    display: inline-block;
+    float: center;
+    width: 45%;
+    color: #77b966;
+}
+/*** Specifiek voor postcode en kenteken ***/
+#pckt {
+    width: 45%;
+    margin-left: 5em;
+}
+/*** Specifiek voor verzendknop ***/
+#knop {
+    display: inline-block;
+    margin-left: 1em;
+    width: 93%;
+    background-color: #77b966;
+    color: white;
+    font-size: large;
+}
+/*** Specifiek voor checkbox kenteken ***/
+#chk {
+    margin-left: 0.5em;
+}
+input[type=checkbox] {
+    display: inline-block;
+    -moz-transform: scale(1.5);
+    background-color: #28611a;
+}
+/*** Specifiek voor merk/type en kleur-keuze boxen ***/
+#opt {
+    margin-left: 3em;
+    width: 45%;
+}
+#opt2 {
+    margin-left: 6.8em;
+    width: 45%;
+}
+/*** Specifiek voor radiobuttons verzekering ***/
+.rad {
+    display: inline-block;
+    float: center;
+    margin: 0 0.5em 0 0.5em;
+}
+#lab {
+    width: 10em;
+}

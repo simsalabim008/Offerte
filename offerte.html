@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bereken direct de premie voor uw autoverzekering</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="offerte.css">
+</head>
+<body>
+  <h1 class="pagetitle">Bereken uw premie</h1>
+  <form method="get" action="server URL">    
+    <fieldset class="formset">
+      <legend>Uw gegevens</legend>
+      <label>Postcode
+        <input type="text" name="postcode" placeholder="1234AA" required class="invoer" id="pckt"/> 
+      </label>
+      <label>Geboortedatum
+        <input type="date" name="geboortedatum" placeholder="jjjj-mm-dd" required class="invoer" id="dat"/>  
+      </label>
+    </fieldset>	
+    <fieldset>
+      <legend>Uw Auto</legend>  
+      <label>Kenteken
+        <input type="text" name="kenteken" placeholder="11-AA-BB" class="invoer" id="pckt"/>
+      </label>
+      <label>
+        <input type="checkbox" name="kentekenBekend" id="chk"/>
+        Mijn kenteken is (nog) niet bekend
+      </label>
+      <label>Merk en type
+        <select name="merkEnType" required id="opt">
+          <optgroup label="Volvo">
+            <option value="VolvoV40">V40</option>
+            <option value="VolvoV50">V50</option>
+            <option value="VolvoV70">V70</option>
+          </optgroup>	
+          <optgroup label="Volkswagen">
+            <option value="VolkswagenPolo">Polo</option>
+            <option value="VolkswagenGolf">Golf</option>
+          </optgroup>
+        </select> 
+      </label>
+      <label>Kleur
+        <input type="color" name="kleur" placeholder="blauw" required id="opt2"/>
+      </label>
+    </fieldset>	
+    <fieldset>
+      <legend>Verzekering</legend>
+      <label id="lab">
+        <input type="radio" name="soortVerzekering" value="wa" checked class="rad"/>
+        WA
+      </label>
+      <label id="lab">
+        <input type="radio" name="soortVerzekering" value="allRisk" class="rad"/>
+        All Risk
+      </label>
+      <label>Ingangsdatum
+        <input type="date" name="ingangsdatum" placeholder="jjjj-mm-dd" required class="invoer" id="dat"/>
+      </label>
+    </fieldset>	
+    <fieldset>
+      <legend>Bereken uw premie</legend>
+      <input type="submit" value="Bereken" id="knop"/>
+    </fieldset>
+  </form>     
+</body>
+</html>
